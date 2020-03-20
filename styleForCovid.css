@@ -1,0 +1,179 @@
+
+            *{
+                padding: 0;
+                margin: 0;
+                text-decoration: none;
+                list-style: none;
+                box-sizing: border-box;
+              }
+              body{
+                font-family: montserrat;
+              }
+              nav{
+                background:	#292424;
+                height: 80px;
+                width: 100%;
+              }
+              label.logo{
+                color: white;
+                font-size: 35px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+                margin-left: 20px;
+              }
+              nav ul{
+                float: right;
+                margin-right: 20px;
+              }
+              nav ul li{
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+              }
+              nav ul li a{
+                color: white;
+                font-size: 17px;
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-transform: uppercase;
+              }
+              a.active,a:hover{
+                
+                transition: .5s;
+              }
+              .checkbtn{
+                font-size: 30px;
+                color: white;
+                float: right;
+                line-height: 80px;
+                margin-right: 40px;
+                cursor: pointer;
+                display: none;
+              }
+              #check{
+                display: none;
+              }
+              @media (max-width: 952px){
+                label.logo{
+                  font-size: 30px;
+                  padding-left: 50px;
+                }
+                nav ul li a{
+                  font-size: 16px;
+                }
+              }
+              @media (max-width: 858px){
+                .checkbtn{
+                  display: block;
+                }
+                ul{
+                  position: fixed;
+                  width: 100%;
+                  height: 100vh;
+                  background: #2c3e50;
+                  top: 80px;
+                  left: -100%;
+                  text-align: center;
+                  transition: all .5s;
+                }
+                nav ul li{
+                  display: block;
+                  margin: 50px 0;
+                  line-height: 30px;
+                }
+                nav ul li a{
+                  font-size: 20px;
+                }
+                a:hover,a.active{
+                  background: none;
+                  color: #0082e6;
+                }
+                #check:checked ~ ul{
+                  left: 0;
+                }
+              }
+              section{
+                background: url(bg1.jpg) no-repeat;
+                background-size: cover;
+                height: calc(100vh - 80px);
+              }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.counter-count
+{
+    font-size: 18px;
+    background-color: #00b3e7;
+    border-radius: 50%;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    line-height: 92px;
+    width: 92px;
+    height: 92px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+
+
+  body {
+ 
+ 
+}
+
+
+h1, h2{
+   margin-top: 80px;
+   font-size: 40px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    font-family: 'Sen', sans-serif;
+    font-size: 30px;
+}
+
+.input-group{
+    width: 80vw;
+}
+
+label{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+h1:nth-child(1){
+    margin-top:40px;
+}
+
+p.navForCovid{
+    margin-top: 50px;
+    font-family: 'Sen', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.copy{
+    margin-top: 20px;
+    position: sticky;
+    margin-left: 10px;
+    font-size: 10px;
+    bottom: 2px;
+}
+
+footer{
+  background:#333;
+  color:#fff;
+  padding:30px 0 20px 0;
+  margin-top: 50px;
+}
+

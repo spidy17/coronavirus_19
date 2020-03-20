@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <style>
+        a {
+          color: brown;
+          }
+         a:hover {
+           color: black;
+         } 
+         #countryName{
+             margin-bottom: 20px;
+         }
+         #ss{
+             margin-top: 20px;
+         }
+
+         #countryName{
+             width:50%;
+             align:center;
+             
+         }
+         h2.hss{
+             align:center;
+         }
+         #button-addon2{
+             margin-top: 5px;
+         }
+         .bnn{
+             color:white;
+         }
+       
+      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Live Updates by Country</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styleForCovid.css">
+    <script src="covid.js" defer></script>
+</head>
+
+
+    <body>
+         <nav>
+            <label class="logo">CoronaVirus Counter</label>
+            <ul>
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="tables.html">Tabular country data</a>
+                </li>
+                <li>
+                    <a href="country.html">Country stats</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+    <center>
+     
+        <h2 class="hss">Get Stats by Country</h2>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control"  placeholder="Country Name" aria-label="Country Name"
+                aria-describedby="button-addon2" id="countryName">
+                </div>
+                
+                
+            <div class="input-group-append">
+                <button class="btn btn-success btn-lg" type="button" id="button-addon2"
+                    onclick="getDataByCountry()">Show</button>
+            </div>
+        </div>
+    
+
+    <center>
+        <h2 id="currentCountry">
+
+        </h2>
+    </center>
+
+
+    <center>
+        <div class="card text-white bg-danger mb-3 card border-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header"><h3>Total Cases:</h3></div>
+            <div class="card-body">
+
+             <p class="card-text"><h4><div id="totalCasesByCountry"></div></h4></p>
+            </div>
+          </div>
+    </center>
+
+    <center>
+        <div class="card text-white bg-danger mb-3 card border-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header"><h3>Total Deaths:</h3></div>
+            <div class="card-body">
+
+             <p class="card-text"><h4><div id="totalDeathByCountry"></div></h4></p>
+            </div>
+          </div>
+    </center>
+
+    <center>
+        <div class="card text-white bg-danger mb-3 card border-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header"><h3>Total Recovered:</h3></div>
+            <div class="card-body">
+
+             <p class="card-text"><h4><div id="totalRecoveredByCountry"></div></h4></p>
+            </div>
+          </div>
+    </center>
+
+    <center>
+        <button type="button" class="btn btn-success btn-lg" id="ss"><a href="index.html" ><b class="bnn">Back</b></a></button>
+    </center>
+    
+    <footer>
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-6">
+              
+            </div>
+            <div class="col-md-6"><p class="foo"> <h3>&copy; Rohit Iparkar, All Rights Reserved</h3> </p></div>
+          </div>
+        </div>
+      </footer>
+</body>
+
+
+
+</html>

@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<head>
+  <style>
+    a {
+      color: brown;
+      }
+     a:hover {
+       color: black;
+     } 
+     a:visited{
+       color:brown;
+     }
+     #c
+     {
+       text-align: center;
+     }
+     #r1{
+       margin-top: 10px;
+     }
+     body{
+       background-image: url("https://images.unsplash.com/photo-1584582868981-38dbd5d1a86e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+       background-repeat: no-repeat;
+       background-size: cover;
+       
+     }
+  </style>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <title>Corona Live Updates</title>
+    <link rel="stylesheet" href="styleForCovid.css">
+   
+</head>
+
+<body>
+  <nav>
+    <label class="logo">CoronaVirus Counter</label>
+    <ul>
+        <li>
+            <a class="active" href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="tables.html">Tabular country data</a>
+        </li>
+        <li>
+            <a href="country.html">Country stats</a>
+        </li>
+        
+    </ul>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6" id="r1">
+      View Tabular Data  <button type="button" class="btn btn-success"><a href="tables.html" ><b>Click Here</b></a></button>
+    </div>
+    <div class="col-md-6">
+      View Country Stats  <button type="button" class="btn btn-success"><a href="country.html" ><b>Click Here</b></a></button>
+    </div>
+</div>
+</div>
+
+
+    <center>
+        <h1>Total Cases:</h1>
+       
+        <div id="totalCases" class="counter-count"></div>
+    </center>
+
+    <center>
+        <h1>Total Deaths:</h1>
+        <div id="totalDeath" class="counter-count"></div>
+    </center>
+
+    <center>
+        <h1>Total Recovered:</h1>
+        <div id="totalRecovered" class="counter-count"></div>
+    </center>
+
+    <center>
+    
+    </center>
+    <script src="covid.js" defer></script>
+    <footer>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-6">
+        
+      </div>
+      <div class="col-md-6"><p> <h3>&copy; Rohit Iparkar, All Rights Reserved</h3> </p></div>
+    </div>
+  </div>
+</footer>
+</body>
+
+
+</html>
+
