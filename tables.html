@@ -167,6 +167,7 @@ section{
         <th>Cases</th>
         <th>Today Cases</th>
         <th>Deaths</th>
+        <th>Today Deaths</th>
         <th>Recovered</th>
     </tr>
 </thead>
@@ -198,6 +199,7 @@ section{
                                 temp+="<td>"+u.cases+"</td>"
                                 temp+="<td>"+u.todayCases+"</td>"
                                 temp+="<td>"+u.deaths+"</td>"
+                                 temp+="<td>"+u.todayDeaths+"</td>"
                                 temp+="<td>"+u.recovered+"</td></tr>"
                             })
                             document.getElementById("data").innerHTML=temp;
@@ -225,6 +227,7 @@ section{
                                 temp+="<td country='"+key+"'>"+val.cases+"</td>";
                                 temp+="<td country='"+key+"'>"+val.todayCases+"</td>";
                                 temp+="<td country='"+key+"'>"+val.deaths+"</td>";
+                  temp+="<td country='"+key+"'>"+val.todayDeaths+"</td>";
                                 temp+="<td country='"+key+"'>"+val.recovered+"</td></tr>";
              }
          });
