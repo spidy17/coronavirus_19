@@ -45,6 +45,16 @@
 </head>
 
 <body>
+    <script>
+  function callback(response){
+  console.log(response)
+  }
+ 
+    $.ajax({
+      url:"https://geoip-db.com/jsonp",
+      dataType:"jsonp"
+    })
+  </script>
 
   <nav>
     <label class="logo" id="log">CoronaVirus Tracker</label>
@@ -105,16 +115,7 @@
     </div>
   </div>
 </footer>
-    <script>
-  function callback(response){
-  console.log(response)
-  }
- 
-    $.ajax({
-      url:"https://geoip-db.com/jsonp",
-      datatype:"jsonp"
-    })
-  </script>
+  
 </body>
 
 
