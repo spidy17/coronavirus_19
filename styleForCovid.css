@@ -172,6 +172,7 @@ p.navForCovid{
 }
 
 footer{
+  position:fixed;         
   background:#333;
   color:#fff;
   padding:30px 0 20px 0;
